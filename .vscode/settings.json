@@ -1,0 +1,4 @@
+{
+    "deno.enable": false,
+    "python.pythonPath": "/usr/bin/python"
+}
