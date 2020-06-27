@@ -10,6 +10,7 @@ if [ -e third_party/$MOD_NAME/name ]; then
     MOD_NAME=$(cat third_party/$MOD_NAME/name)
 fi
 cp -rf third_party/$MOD_NAME node_modules/$MOD_NAME
+echo "" >>.gitignore
 echo "node_modules/$MOD_NAME" >>.gitignore
 echo "git clone '$1' node_modules/$MOD_NAME" >>setup.sh
 git stage .gitignore setup.sh
